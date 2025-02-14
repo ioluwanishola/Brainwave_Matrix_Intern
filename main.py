@@ -49,13 +49,7 @@ def is_phishing_url(url, legitimate_domains):
         # Print a warning if the domain is potentially misspelled
         print(f"Potential Phishing detected: {url}")
         return True  # It's potentially a phishing URL
-        
-     # Check if the domain is misspelled compared to legitimate domains
-    if is_misspelled_domain(domain, legitimate_domains):
-        # Print a warning if the domain is potentially misspelled
-        print(f"Potential Phishing detected: {url}")
-        return True  # It's potentially a phishing URL
-    
+
     # If no issues are found, it's not a phishing URL
     return False
 
